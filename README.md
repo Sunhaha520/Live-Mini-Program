@@ -5,10 +5,10 @@
 - 绿色背景，方便直播裁剪👉
 - 渐变背景美化，简洁美观✍️
 #预览图
-|      |      |
-| ---- | ---- |
-![预览图1](https://cdn.staticaly.com/gh/Sunhaha520/picx-images-hosting@master/img/diaoyu.dvivoojnc28.webp)
-![预览图2](https://cdn.staticaly.com/gh/Sunhaha520/picx-images-hosting@master/img/微信图片_20230413153320.1eqbro3htjxc.webp)
+|   ![预览图1](https://cdn.staticaly.com/gh/Sunhaha520/picx-images-hosting@master/img/diaoyu.dvivoojnc28.webp)
+   |  ![预览图2](https://cdn.staticaly.com/gh/Sunhaha520/picx-images-hosting@master/img/微信图片_20230413153320.1eqbro3htjxc.webp)
 
-# 在线体验
+# 在线体验    |
+| ---- | ---- |
+
 [在线体验地址](https://www.wulihub.com.cn/gc/Qoy3yo/index.html)
