@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>计分器</title>
+    <style>
+
+    #bg{
+         height: 530px;
+         width: 1400px;
+         background-color: green;
+             
+
+        }
+     #parent{
+            position: relative;
+            top: 80px;
+        }
+
+
+
+		.container {
+			
+			position: relative;
+                  text-align: center;
+		}
+         #t1{
+           
+            display: inline;
+
+background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);            
+            color: white;
+          
+          
+
+        }
+         #t2{
+           justify-content: center; 
+           align-items: center;
+            
+           position: relative;
+           
+           background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+
+        }
+		.timer {
+      font-size: 5.5rem;
+			margin: 0 1rem;
+                  text-align: center;
+                   font-weight: bold;
+	
+		}
+
+ 
+h1 {
+color:white;
+}
+	.scoreboard {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.team-a {
+   display: inline;
+   width: 158px;
+   text-align: center;
+       background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+   float: left;
+
+}
+.team-a1 {
+   display: inline-block;
+   width: 158px;
+   text-align: center;
+       background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    float: left;
+}
+.team-b {
+   display: inline-block;
+   width: 158px;
+   text-align: center;
+   background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+.team-b1 {
+   display: inline-block;
+   width: 158px;
+   text-align: center;
+   background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+.score1 {
+    font-size: 80px;
+    color:white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+}
+.score2 {
+    font-size: 80px;
+    font-weight: bold;
+    color:white;
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+
+
+.menu {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menu button:hover {
+    background-color: #eee;
+}
+
+#textField1{
+           height: 70px;
+            width: 150px;
+            font-size: 50px;
+            text-align: center;
+            background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+            font-weight: bold;
+            color: white;
+         }
+
+#textField2{
+           height: 70px;
+            width: 150px;
+            font-size: 50px;
+            text-align: center;
+            background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+            font-weight: bold;
+            color: white;
+         }
+#textField3{
+           height: 70px;
+            width: 550px;
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+         }
+
+#imge{
+           height: 116px;
+            width: 550px;
+            font-size: 50px;
+            text-align: center;
+            
+           
+         }
+img{
+           height: 116px;
+            width: 550px;
+           
+            
+           
+         }
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+  <div id="bg">
+  <div id="parent">
+<div class="scoreboard">
+
+
+    
+         
+        <div class="team-a1">
+            <h1>胜局</h1>
+            <p class="score1" id="scoreA1">0</p>
+            
+        </div>
+     
+        <div class="team-a">
+            <label for="textField1"></label>
+            <input type="text" id="textField1">
+            <p class="score1" id="scoreA">0</p>
+            
+        </div>
+       <div id="t1">
+       <div id="t2">
+                    <label for="textField3"></label>
+            <input type="text" id="textField3">
+        <div class="container">
+         
+		<div class="timer"></div>
+      </div>
+           
+            </div>
+     <div id="imge">
+     <img src="https://gitee.com/sunzhenyudsg/blogtuku/raw/master/img/未命名的文件 (2) (1).webp"/>
+    
+	</div>
+      </div>
+        <div class="team-b">
+            <label for="textField2"></label>
+            <input type="text" id="textField2">
+            <p class="score2" id="scoreB">0</p>
+            
+        </div>
+        <div class="team-b1">
+            <h1>胜局</h1>
+            <p class="score2" id="scoreB1">0</p>
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+  <div id="menu1">  
+    <div class="menu">
+        <h2>菜单</h2>
+        <button id="addScoreA">红队加分</button>
+        <button id="subtractScoreA">红队减分</button>
+        <button id="reset">重置得分</button>
+        <button id="addScoreB">蓝队加分</button>
+        <button id="subtractScoreB">蓝队减分</button>
+        </br>
+        <button id="addScoreA1">红队胜1</button>
+        <button id="subtractScoreA1">红队减一</button>
+        <button id="reset1">重置胜利场次</button>
+        <button id="addScoreB1">蓝队胜1</button>
+        <button id="subtractScoreB1">蓝队减一</button>
+        </br>
+       
+        <label for="hours">小时：</label>
+		<input type="number" id="hours" min="0" max="23" value="0">
+		<label for="minutes">分钟：</label>
+		<input type="number" id="minutes" min="0" max="59" value="0">
+		<label for="seconds">秒钟：</label>
+		<input type="number" id="seconds" min="0" max="59" value="0">
+		<button id="start">开始</button>
+		<button id="pause">暂停</button>
+		<button id="resume">继续</button>
+		<button id="reset2">重置</button>
+    </br>
+    </br>
+    <label for="menuInput">队伍一名称:</label>
+    <input type="text" id="menuInput" oninput="syncTextField1()">
+    <label for="menuInput">队伍二名称:</label>
+    <input type="text" id="menuInput1" oninput="syncTextField2()">
+        </br>
+    </br>
+    <label for="menuInput">大赛名称:</label>
+    <input type="text" id="menuInput2" oninput="syncTextField3()">
+    </div>
+</div>
+    
+    <script>
+		// 获取各个元素
+const scoreA = document.getElementById("scoreA");
+const scoreB = document.getElementById("scoreB");
+const addScoreA = document.getElementById("addScoreA");
+const addScoreB = document.getElementById("addScoreB");
+const subtractScoreA = document.getElementById("subtractScoreA");
+const subtractScoreB = document.getElementById("subtractScoreB");
+const reset = document.getElementById("reset");
+
+// 初始化得分
+let scoreTeamA = 0;
+let scoreTeamB = 0;
+
+// 绑定加分和减分事件
+addScoreA.addEventListener("click", function() {
+    scoreTeamA++;
+    scoreA.textContent = scoreTeamA;
+});
+
+addScoreB.addEventListener("click", function() {
+    scoreTeamB++;
+    scoreB.textContent = scoreTeamB;
+});
+
+subtractScoreA.addEventListener("click", function() {
+    if (scoreTeamA > 0) {
+        scoreTeamA--;
+        scoreA.textContent = scoreTeamA;
+    }
+});
+
+subtractScoreB.addEventListener("click", function() {
+    if (scoreTeamB > 0) {
+        scoreTeamB--;
+        scoreB.textContent = scoreTeamB;
+    }
+});
+
+// 绑定重置事件
+reset.addEventListener("click", function() {
+    scoreTeamA = 0;
+    scoreTeamB = 0;
+    scoreA.textContent = scoreTeamA;
+    scoreB.textContent = scoreTeamB;
+});
+
+
+
+		// 获取各个元素
+const scoreA1 = document.getElementById("scoreA1");
+const scoreB1 = document.getElementById("scoreB1");
+const addScoreA1 = document.getElementById("addScoreA1");
+const addScoreB1 = document.getElementById("addScoreB1");
+const subtractScoreA1 = document.getElementById("subtractScoreA1");
+const subtractScoreB1 = document.getElementById("subtractScoreB1");
+const reset1 = document.getElementById("reset1");
+
+// 初始化得分
+let scoreTeamA1 = 0;
+let scoreTeamB1 = 0;
+
+// 绑定加分和减分事件
+addScoreA1.addEventListener("click", function() {
+    scoreTeamA1++;
+    scoreA1.textContent = scoreTeamA1;
+});
+
+addScoreB1.addEventListener("click", function() {
+    scoreTeamB1++;
+    scoreB1.textContent = scoreTeamB1;
+});
+
+subtractScoreA1.addEventListener("click", function() {
+    if (scoreTeamA1 > 0) {
+        scoreTeamA1--;
+        scoreA1.textContent = scoreTeamA1;
+    }
+});
+
+subtractScoreB1.addEventListener("click", function() {
+    if (scoreTeamB1 > 0) {
+        scoreTeamB1--;
+        scoreB1.textContent = scoreTeamB1;
+    }
+});
+
+// 绑定重置事件
+reset.addEventListener("click", function() {
+    scoreTeamA1 = 0;
+    scoreTeamB1 = 0;
+    scoreA1.textContent = scoreTeamA1;
+    scoreB1.textContent = scoreTeamB1;
+});
+
+
+//计时
+let hours = 0;
+		let minutes = 0;
+		let seconds = 0;
+		let remainingTime = 0;
+		let timerElem = document.querySelector('.timer');
+		let hourInput = document.querySelector('#hours');
+		let minuteInput = document.querySelector('#minutes');
+		let secondInput = document.querySelector('#seconds');
+		let startBtn = document.querySelector('#start');
+		let pauseBtn = document.querySelector('#pause');
+		let resumeBtn = document.querySelector('#resume');
+		let resetBtn = document.querySelector('#reset2');
+		let timerInterval = null;
+
+		// 开始倒计时
+		function startTimer() {
+			applySettings();
+			updateTimer();
+			pauseBtn.disabled = false;
+			resumeBtn.disabled = true;
+			startBtn.disabled = true;
+			resetBtn.disabled = false;
+
+			// 如果倒计时未结束，继续计时
+			if (remainingTime > 0) {
+				timerInterval = setInterval(() => {
+					remainingTime--;
+					updateTimer();
+					if (remainingTime === 0) {
+						clearInterval(timerInterval);
+					pauseBtn.disabled = true;
+					resumeBtn.disabled = true;
+					startBtn.disabled = false;
+				}
+			}, 1000);
+		}
+	}
+
+	// 暂停倒计时
+	function pauseTimer() {
+		clearInterval(timerInterval);
+		pauseBtn.disabled = true;
+		resumeBtn.disabled = false;
+	}
+
+	// 继续倒计时
+	function resumeTimer() {
+		timerInterval = setInterval(() => {
+			remainingTime--;
+			updateTimer();
+			if (remainingTime === 0) {
+				clearInterval(timerInterval);
+				pauseBtn.disabled = true;
+				resumeBtn.disabled = true;
+				startBtn.disabled = false;
+			}
+		}, 1000);
+		pauseBtn.disabled = false;
+		resumeBtn.disabled = true;
+	}
+
+	// 重置倒计时
+	function resetTimer() {
+		clearInterval(timerInterval);
+		hours = 0;
+		minutes = 0;
+		seconds = 0;
+		remainingTime = 0;
+		updateTimer();
+		pauseBtn.disabled = true;
+		resumeBtn.disabled = true;
+		startBtn.disabled = false;
+		resetBtn.disabled = true;
+	}
+
+	// 应用设置
+	function applySettings() {
+		hours = parseInt(hourInput.value) || 0;
+		minutes = parseInt(minuteInput.value) || 0;
+		seconds = parseInt(secondInput.value) || 0;
+		remainingTime = hours * 3600 + minutes * 60 + seconds;
+	}
+
+	// 更新计时器
+	function updateTimer() {
+		let h = Math.floor(remainingTime / 3600);
+		let m = Math.floor((remainingTime % 3600) / 60);
+		let s = remainingTime % 60;
+		timerElem.innerText = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+	}
+
+	startBtn.addEventListener('click', startTimer);
+	pauseBtn.addEventListener('click', pauseTimer);
+	resumeBtn.addEventListener('click', resumeTimer);
+	resetBtn.addEventListener('click', resetTimer);
+
+
+ function syncTextField1() {
+        var menuInput = document.getElementById("menuInput").value;
+        document.getElementById("textField1").value = menuInput;
+    }
+  function syncTextField2() {
+        var menuInput = document.getElementById("menuInput1").value;
+        document.getElementById("textField2").value = menuInput;
+    }
+function syncTextField3() {
+        var menuInput = document.getElementById("menuInput2").value;
+        document.getElementById("textField3").value = menuInput;
+    }
+
+
+
+</script>
+
+                                    
+</body>
+</html>
