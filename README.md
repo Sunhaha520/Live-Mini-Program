@@ -7,8 +7,6 @@
 #预览图
 </br>
 ![预览图1](https://cdn.staticaly.com/gh/Sunhaha520/picx-images-hosting@master/img/diaoyu.dvivoojnc28.webp)
-
-</br>
 ![预览图2](https://cdn.staticaly.com/gh/Sunhaha520/picx-images-hosting@master/img/微信图片_20230413153320.1eqbro3htjxc.webp)
 
 # 在线体验
